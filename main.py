@@ -10,9 +10,9 @@ if __name__ == "__main__":
     data = list(range(0, 1000))
     with multiprocessing.Pool(processes=10) as pool:
         results = pool.map(m_c.monte_carlo, data)
-        print(results)
+        print(results)          
 
-    asyncio.run(a1.some_func())
+    asyncio.run(a1.main())
 
     data = []
     for i in range(10):
